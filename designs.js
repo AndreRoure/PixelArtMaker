@@ -12,15 +12,15 @@ function makeGrid() {
   let first = "";
   let second = "";
 //Loop to detrmine the width of the grid.
-for (let i = 1; i <= width; i++) {
-  first = first + "<td></td>";
-}
+  for (let i = 1; i <= width; i++) {
+    first = first + "<td></td>";
+  }
 //Loop to determine the height of the grid(needs the width).
-for (let j = 1; j <= height; j++) {
-  second = second + "<tr>" + first + "</tr>";
-}
+  for (let j = 1; j <= height; j++) {
+    second = second + "<tr>" + first + "</tr>";
+  }
 //Creates the grid.
-grid.innerHTML = second;
+  grid.innerHTML = second;
 }
 
 //Event listener for the submition of grid size.
